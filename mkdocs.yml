@@ -1,0 +1,54 @@
+site_name: DeePyMoD
+nav:
+    - Home: index.md
+    - Background: background/background.md
+    - API: 
+        - Model:
+            - DeepMoD: api/deepmod.md
+            - Function Approximators: api/func_approx.md
+            - Libraries: api/lib.md
+            - Constraints: api/constraint.md
+            - Sparsity: api/sparse.md
+        - Training: 
+            - Training: api/training.md
+            - Sparsity Scheduler: api/spars_sched.md
+            - Convergence: api/convergence.md
+        - Data: 
+            - Base: api/data/base.md
+            - Equations:
+                - Burgers: api/data/burgers.md
+                - Korteweg-de Vries: api/data/kdv.md
+        - Analysis: api/analysis.md
+    - Examples: 
+        - 2D Advection Diffusion: examples/2DAD/2DAD.md
+        - KdV: examples/PDE_KdV/PDE_KdV.md
+        - Burgers: examples/Burgers/PDE_Burgers.md
+        - Non-linear ODE: examples/ODE_nonlin/ODE.md
+
+theme:
+    name: "material"
+    palette:
+        primary: black
+
+plugins:
+    - search
+    - mkdocstrings
+    
+markdown_extensions:
+    - admonition
+    - codehilite
+    - pymdownx.arithmatex
+    - pymdownx.superfences
+    - pymdownx.tabbed 
+
+extra_css:
+    - css/mkdocstrings.css
+
+repo_url: "https://github.com/PhIMaL/DeePyMoD"
+site_url: "https://phimal.github.io/DeePyMoD/"
+
+extra_javascript:
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+  
+      
+
